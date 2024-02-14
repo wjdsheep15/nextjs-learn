@@ -27,3 +27,5 @@ export default async function HomePage() {
     </div>
   );
 }
+
+export const runtime = "edge";
