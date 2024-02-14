@@ -2,23 +2,23 @@
   "sortedMiddleware": [],
   "middleware": {},
   "functions": {
-    "/(movies)/movies/[id]/page": {
+    "/(home)/page": {
       "files": [
         "server/server-reference-manifest.js",
-        "server/app/(movies)/movies/[id]/page_client-reference-manifest.js",
+        "server/app/(home)/page_client-reference-manifest.js",
         "server/middleware-build-manifest.js",
         "server/middleware-react-loadable-manifest.js",
         "server/next-font-manifest.js",
         "prerender-manifest.js",
         "server/edge-runtime-webpack.js",
-        "server/app/(movies)/movies/[id]/page.js"
+        "server/app/(home)/page.js"
       ],
-      "name": "app/(movies)/movies/[id]/page",
-      "page": "/(movies)/movies/[id]/page",
+      "name": "app/(home)/page",
+      "page": "/(home)/page",
       "matchers": [
         {
-          "regexp": "^/movies/(?<id>[^/]+?)$",
-          "originalSource": "/movies/[id]"
+          "regexp": "^/$",
+          "originalSource": "/"
         }
       ],
       "wasm": [],
@@ -46,23 +46,23 @@
       "wasm": [],
       "assets": []
     },
-    "/(home)/page": {
+    "/(movies)/movies/[id]/page": {
       "files": [
         "server/server-reference-manifest.js",
-        "server/app/(home)/page_client-reference-manifest.js",
+        "server/app/(movies)/movies/[id]/page_client-reference-manifest.js",
         "server/middleware-build-manifest.js",
         "server/middleware-react-loadable-manifest.js",
         "server/next-font-manifest.js",
         "prerender-manifest.js",
         "server/edge-runtime-webpack.js",
-        "server/app/(home)/page.js"
+        "server/app/(movies)/movies/[id]/page.js"
       ],
-      "name": "app/(home)/page",
-      "page": "/(home)/page",
+      "name": "app/(movies)/movies/[id]/page",
+      "page": "/(movies)/movies/[id]/page",
       "matchers": [
         {
-          "regexp": "^/$",
-          "originalSource": "/"
+          "regexp": "^/movies/(?<id>[^/]+?)$",
+          "originalSource": "/movies/[id]"
         }
       ],
       "wasm": [],
